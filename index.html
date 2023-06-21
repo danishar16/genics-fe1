@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="height: 100vh; width: 100%;" class="flex justify-center items-center">
+        <section id="calc" class="flex flex-col justify-center  h-fit w-fit bg-neutral-800 p-10 rounded-xl gap-2">
+            <input id="display" type="text" placeholder="0" class="h-20 rounded-xl text-right text-3xl pr-2 mb-3">
+            <div id="tombol" class="grid grid-cols-4 gap-2 ">
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(7)">7</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(8)">8</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(9)">9</button>
+                <button type="button" class="w-20 h-20 bg-sky-200 rounded-xl text-xl font-bold hover:opacity-80 opacity-90 transition duration-300 ease-in-out" onclick="press('+')">+</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(4)">4</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(5)">5</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(6)">6</button>
+                <button type="button" class="w-20 h-20 bg-sky-200 rounded-xl text-xl font-bold hover:opacity-80 opacity-90 transition duration-300 ease-in-out" onclick="press('-')">-</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(1)">1</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(2)">2</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(3)">3</button>
+                <button type="button" class="w-20 h-20 bg-sky-200 rounded-xl text-xl font-bold hover:opacity-80 opacity-90 transition duration-300 ease-in-out" onclick="press('*')">x</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press('.')">.</button>
+                <button type="button" class="w-20 h-20 bg-zinc-700 text-white rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="press(0)">0</button>
+                <button type="button" class="w-20 h-20 bg-neutral-200 rounded-xl text-xl font-bold hover:opacity-80 transition duration-300 ease-in-out" onclick="hapus()">C</button>
+                <button type="button" class="w-20 h-20 bg-sky-200 rounded-xl text-xl font-bold hover:opacity-80 opacity-90 transition duration-300 ease-in-out" onclick="press('*')">/</button>
+            </div>
+            <button type="button" class="w-full h-20 bg-sky-200 rounded-xl text-xl font-bold hover:opacity-80 opacity-90transition duration-300 ease-in-out" onclick="equal()">=</button>
+        </section>
+
+    </div>
+</body>
+
+<script src="/script.js"></script>
+</html>
